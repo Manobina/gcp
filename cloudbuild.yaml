@@ -6,7 +6,7 @@ steps:
     - '-c'
     - |
       docker pull gcr.io/$PROJECT_ID/tomcat:latest || exit 0
-    options:
+  - options:
     logging: CLOUD_LOGGING_ONLY
 # Build a docker image
  - name: 'gcr.io/cloud-builders/docker'
